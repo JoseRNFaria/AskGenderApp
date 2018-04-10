@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_menu.*
 import pt.josefaria.kotlingenderizeapp.R
-import pt.josefaria.kotlingenderizeapp.ui.AskGender.AskGenderActivity
+import pt.josefaria.kotlingenderizeapp.ui.AskGender.AskGenderView
 
 class MenuActivity : AppCompatActivity() {
 
@@ -14,12 +14,12 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         ask_gender.setOnClickListener {
-            val intent = Intent(this, AskGenderActivity::class.java)
+            val intent = Intent(this, AskGenderView::class.java)
             startActivity(intent)
         }
 
         saved_question.setOnClickListener {
-            val intent = Intent(this, AskGenderActivity::class.java)
+            val intent = Intent(this, AskGenderView::class.java)
             startActivity(intent)
         }
     }
